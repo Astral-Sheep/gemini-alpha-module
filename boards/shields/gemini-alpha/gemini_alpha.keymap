@@ -6,6 +6,17 @@
 #define FN 1
 
 / {
+	behaviors {
+		comp: comparison {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp LT>, <&kp GT>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+	};
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -43,15 +54,6 @@
 																		   &trans       &trans         &trans         &trans   &trans   &trans
 																		   &trans       &trans         &trans         &trans   &trans   &trans
 			>;
-		};
-	};
-
-	behaviors {
-		comp: comparison {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
-			bindings = <&kp LT>, <&kp GT>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 	};
 };
