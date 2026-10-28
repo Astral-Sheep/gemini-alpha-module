@@ -1,0 +1,12 @@
+file_format: "1"
+id: gemini_alpha
+name: Gemini Alpha
+type: shield
+url: https://github.com/Astral-Sheep/gemini-alpha-module/
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - gemini_alpha_left
+  - gemini_alpha_right

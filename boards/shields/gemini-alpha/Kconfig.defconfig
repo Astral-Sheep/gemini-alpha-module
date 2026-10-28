@@ -1,0 +1,17 @@
+if SHIELD_GEMINI_ALPHA_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+	default "GEMINI Alpha"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_GEMINI_ALPHA_LEFT || SHIELD_GEMINI_ALPHA_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
